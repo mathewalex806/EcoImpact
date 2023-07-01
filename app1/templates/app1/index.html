@@ -1,0 +1,58 @@
+{% extends "app1/layout.html" %}
+{% load static %}
+{%block title%}Home{%endblock%}
+{%block body%}
+
+
+
+<div class="banner">
+    <div class="navbar">
+        <h1 style="color: white; font-size: 20pt; margin-left: 30px; margin-top: 10px;">EcoImpact</h1>
+        <ul>
+            <li><a href="{%url 'login'%}">Login/Logout</a></li>
+        </ul>
+    </div>   
+</div>
+<div class="content">
+    <h1>Calculate Carbon Emission Instantly</h1>
+    <p>
+        Understanding CO2 emissions is vital in combating climate change as it allows us to identify the major contributors, implement targeted reductions, and work <br> towards a sustainable future that preserves our planet for generations to come. <br>Together, through individual efforts and informed decision-making, we can create a collective impact  that accelerates the transition to a <br> sustainable future and safeguards the planet for generations to come. </p>
+    <div>
+        <a href="{%url 'Contribute'%}" style="width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        font-weight: bold;
+        border: 2px solid #009688;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        " type="button">Contribute</a>
+        <a href="{%url 'main'%}" style="width: 200px;
+        padding: 15px 0;
+        text-align: center;
+        margin: 20px 10px;
+        font-weight: bold;
+        border: 2px solid #009688;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;" type="button">Explore Factors</a>
+    </div>
+</div>
+<div class="about" style="height: 125vh; max-height: 1150px;">
+    <div class="contents">
+        <h1 style="margin-top: 10vh;">About EcoImpact</h1>
+        <p style="margin-top: 10vh;">Welcome to our website, your go-to platform for exploring and understanding greenhouse gas emissions. Here, we provide an interactive interface that showcases the various sources and quantities of greenhouse gases released into the atmosphere. By offering comprehensive data and insights, we aim to raise awareness about the environmental impact of human activities. Additionally, we offer a curated list of links to support reputable organizations and initiatives that are actively combatting climate change. These organizations focus on promoting renewable energy, reforestation, sustainable agriculture, and other vital aspects of a greener future. Join us in taking action and making a difference today by utilizing the resources provided on our website and supporting these incredible organizations. Together, we can contribute towards a more sustainable and resilient planet for all.</p>
+    </div>
+</div>
+
+{%endblock%}
+{%block script%}
+
+<script src="{% static 'app1/javascript.js'%}"></script>
+
+{%endblock%}

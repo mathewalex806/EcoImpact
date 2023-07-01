@@ -1,0 +1,32 @@
+{% extends "app1/layout_nav.html" %}
+{%block title%}Login{%endblock%}
+{%block body%}
+  <div class="login">
+    
+    <div class="content">
+      <div class="box">
+        <h2>Welcome Back!</h2>
+        <p></p>
+        {%if message%}
+        <p>{{message}}</p>
+        {%endif%}
+        <form action="{%url 'login'%}" method="post">
+          {%csrf_token%}
+          <div class="inputBox">
+            <input type="text" name="username" required onkeyup="this.setAttribute('value', this.value);" value="">
+            <label>Username</label>
+          </div>
+          <div class="inputBox">
+            <input type="password" name="password" required onkeyup="this.setAttribute('value', this.value);" value="">
+            <label>Password</label>
+          </div>
+          <input type="submit" name="sign-in" value="Sign In">
+        </form>
+        <p><a href="{%url 'register'%}" class="link-info link-offset-2 link-underline-opacity-0 link-underline-opacity-30-hover">First Time? Click here to Register.</a></p>
+      </div>
+    </div>
+    
+  </div>
+  
+
+{%endblock%}

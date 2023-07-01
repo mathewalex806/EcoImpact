@@ -1,0 +1,70 @@
+{%extends 'app1/layout.html'%}
+{%load static%}
+{%block body%}
+
+    <h1 class = "logo">Calorie Counter</h1>
+    <div class="pageContainer">
+        <h2 class = "fooditem">Food Item : <b>Burger</b></h1>
+        <h1 class="hero">987.65 Calories!</h1>
+        <div class="otherInfo">
+            <div class="items">
+                <h2 class = "info" id = "Info1">Serving Size</h2>
+                <h2 class = "info" id = "Info1_1">100</h2>
+            </div>
+            <hr width="61%">
+            <div class="items">
+                <h2 class = "info" id = "Info2">Total Fat (g)</h2>
+                <h2 class = "info" id = "Info2_1">14.8</h2>
+            </div>
+            <hr width="61%">
+            <div class="items">
+                <h2 class = "info" id = "Info3">Saturated Fat (g)</h2>
+                <h2 class = "info" id = "Info3_1">14.8</h2>
+            </div>
+            <hr width="61%">
+            <div class="items">
+                <h2 class = "info" id = "Info4">Protein (g)</h2>
+                <h2 class = "info" id = "Info4_1">14.8</h2>
+            </div>
+            <hr width="61%">
+            <div class="items">
+                <h2 class = "info" id = "Info5">Sodium (mg)</h2>
+                <h2 class = "info" id = "Info5_1">14.8</h2>
+            </div>
+            <hr width="61%">
+            <div class="items">
+                <h2 class = "info" id = "Info6">Potassium (mg)</h2>
+                <h2 class = "info" id = "Info6_1">14.8</h2>
+            </div>
+            <hr width="61%">
+            <div class="items">
+                <h2 class = "info" id = "Info7">Cholesterol (mg)</h2>
+                <h2 class = "info" id = "Info7_1">14.8</h2>
+            </div>
+            <hr width="61%">
+            <div class="items">
+                <h2 class = "info" id = "Info8">Carbohydrates (g)</h2>
+                <h2 class = "info" id = "Info8_1">14.8</h2>
+            </div>
+            <hr width="61%">
+            <div class="items">
+                <h2 class = "info" id = "Info9">Fiber (g)</h2>
+                <h2 class = "info" id = "Info9_1">14.8</h2>
+            </div>
+            <hr width="61%">
+            <div class="items">
+                <h2 class = "info" id = "Info10">Sugar (g)</h2>
+                <h2 class = "info" id = "Info10_1">14.8</h2>
+            </div>
+            <hr width="61%">
+        </div>
+    </div>
+<script>
+    ScrollReveal().reveal('.items, .pageContainer', {origin: 'bottom'});
+</script>
+{%endblock%}
+
+{%block script%}
+<script src="{%static 'app1/javascript.js'%}"></script>
+
+{%endblock%}

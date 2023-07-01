@@ -1,0 +1,83 @@
+{%extends 'app1/layout_nav.html'%}
+{%block title%}EcoImpact{%endblock%}
+{%load static%}
+{%block body%}
+
+<div class="mainbackground">
+<div class="content">
+  <h2>Unlocking Our Carbon Footprint. <br> Dive into the World of Emissions Metrics</h2>
+  <p>
+    Understanding emission metrics is crucial in the global fight against climate change. <br> By comprehending the scale and sources of greenhouse gas emissions, we can develop targeted strategies, <br> track progress, foster international collaboration, and inspire transformative action. <br> It empowers us to make informed decisions and work towards a sustainable future for generations to come. </p>
+    <h3>Get started today by using the estimations below.</h3>
+</div>
+</div>
+
+
+ <div class="main" style="width: 100%; margin-top: 20px;">
+    <div class="col d-flex justify-content-center ">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card shadow p-3 mb-5 bg-white rounded">
+            <img src="https://d3mvlb3hz2g78.cloudfront.net/wp-content/uploads/2011/06/thumb_720_450_airplane_shutterstock_68709988.jpg" class="card-img-top" style="width: 100%; height: 100%; object-fit: contain;">
+            <div class="card-body">
+              <h5 class="card-title">Air Travel</h5>
+              <p class="card-text">Calculate emissions for Domestic as well as International flights. Takes into account the flight classes as well as RF Factor.</p>
+              <a class = 'btn btn-success'  href="{%url 'Airtravel'%}">Estimate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow p-3 mb-5 bg-white rounded">
+            <img src="https://herthundbuss.com/wp-content/uploads/2022/01/Zwangspause-im-Stau-HerthBuss.jpg" class="card-img-top" style="width: 100%; height: 100%; object-fit: contain;">
+            <div class="card-body">
+              <h5 class="card-title">Road Travel</h5>
+              <p class="card-text">Calculate emissions for cars, busses, cabs and other automobile vehicles. Emissions can be calculated for both electric and conventional drive terrains.</p>
+              <a class = 'btn btn-success' href="{% url 'Roadtravel'%}">Estimate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow p-3 mb-5 bg-white rounded">
+            <img src="https://www.marineinsight.com/wp-content/uploads/2019/08/Cruise-ships-1.png.webp" class="card-img-top" style="width: 100%; height: 100%; object-fit: contain;">
+            <div class="card-body">
+              <h5 class="card-title">Sea Travel</h5>
+              <p class="card-text">Calculate Green house emissions for sea travel including ferries both with passengers as well as cars.</p>
+              <a class = 'btn btn-success' href="{%url 'Seatravel'%}">Estimate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow p-3 mb-5 bg-white rounded">
+            <img src="https://wallpaperaccess.com/full/3025135.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Waste Products</h5>
+              <p class="card-text">Calculate emissions for different kind of waste products and their management.</p>
+              <a class = 'btn btn-success' href="{%url 'Info'%}">Estimate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow p-3 mb-5 bg-white rounded">
+            <img src="https://www.electricchoice.com/wp-content/uploads/2017/04/iStock-504817422-1280x640.jpg" class="card-img-top" style="width: 100%; height: 120%; object-fit: contain;">
+            <div class="card-body">
+              <h5 class="card-title">Energy</h5>
+              <p class="card-text">
+                Evaluating emissions for energy services involves quantifying the greenhouse gas emissions resulting from different means of energy generation, including fossil fuels like oil and renewable sources such as solar and wind.</p>
+              <a class = 'btn btn-success' href="{%url 'Energy'%}">Estimate</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow p-3 mb-5 bg-white rounded">
+            <img src="https://media.licdn.com/dms/image/C5612AQEhBqpPWvDojA/article-cover_image-shrink_423_752/0/1565709259844?e=1692835200&v=beta&t=JgLecgiLW6pLHj-cWSn6elP451cw49gZa6sffNSN5tg" class="card-img-top" style="width: 70%; height: 70%; object-fit: contain;">
+            <div class="card-body">
+              <h5 class="card-title">Consumer Goods and Services</h5>
+              <p class="card-text">Calculate emissions for  products and services designed for personal consumption, as well as intangible services such as healthcare and entertainment.</p>
+              <a class = 'btn btn-success' href="{%url 'Goods'%}">Estimate</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ </div>
+{%endblock%}

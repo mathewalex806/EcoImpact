@@ -1,0 +1,248 @@
+body{
+  margin-top: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.5)),url(https://wallpaperaccess.com/full/1129092.jpg);
+  background-size : cover;
+  background-position: center;
+
+}
+.navbar{
+  width: 100%;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  width: 150px;
+  cursor: pointer;
+}
+.navbar ul li{
+  margin-top: 10px;
+  list-style: none;
+  display: inline-block;
+  margin: 0 30px;
+  position: relative;
+}
+.navbar ul li a{
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.navbar ul li::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+  transition: 0.5s;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+.content h1{
+  font-size: 60px;
+  margin-top: 10px;
+}
+.content p{
+  margin: 20px auto;
+  font-weight:100;
+  line-height: 25px;
+}
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.about{
+  width: 100%;
+  height: 120vh;
+  background-color: black;
+  background-size : cover;
+  background-position: center;
+
+}
+
+.about .contents{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  padding-top: 100px;
+}
+.about .contents h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.about .contents p{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 100;
+}
+.login{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://wallpaperaccess.com/full/280047.jpg);
+  background-size : cover;
+  background-position: center;
+
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0.625rem;
+}
+
+.box h2 {
+  margin: 0 0 1.875rem;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.box .inputBox {
+  position: relative;
+}
+
+.box .inputBox input {
+  width: 100%;
+  padding: 0.625rem 0;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 0.062rem;
+  margin-bottom: 1.875rem;
+  border: none;
+  border-bottom: 0.065rem solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.box .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.625rem 0;
+  font-size: 1rem;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label,
+.box .inputBox input:not([value=""]) ~ label {
+  top: -1.125rem;
+  left: 0;
+  color: #03a9f4;
+  font-size: 0.75rem;
+}
+
+.box input[type="submit"] {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #03a9f4;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  border-radius: 0.312rem;
+  font-size: 1rem;
+}
+
+.box input[type="submit"]:hover {
+  background-color: #1cb1f5;
+}
+
+.mainbackground{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://wallpaperaccess.com/full/128744.jpg);
+  background-size : cover;
+  background-position: center;
+
+}
+
+.airtravelbg{
+  width: 100%;
+  height: 65vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://wallpaperaccess.com/full/9331587.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.airtravelbg .text{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+  padding-top: 100px;
+}
+
+.boxest{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0.625rem;
+}
+
+.estimate{
+  width: 100%;
+  height: 70vh;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://wallpaperaccess.com/full/280047.jpg);
+  background-size : cover;
+  background-position: center;
+}
+
+.contributesites{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+
+}
+.contributesites .a{
+  margin-top: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
