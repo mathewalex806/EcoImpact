@@ -68,7 +68,7 @@ The EcoImpact file comprises a Django project named EcoImpact, which includes a 
 
 Django is a high-level Python web framework that simplifies and streamlines the development of robust and scalable web applications. After installing django and python, follow the steps below.
 
-1. Clone the repo
+1. Clone the repository
    ```sh
    git clone https://github.com/mathewalex806/EcoImpact
    ```
@@ -84,6 +84,10 @@ Django is a high-level Python web framework that simplifies and streamlines the 
 4. To access the admin page, enter the following URL:
    ```sh
     http://127:0.0.1:8000/admin
+    ```
+5. ```sh
+    Username: admin
+    Password: 1234
     ```
 
 
