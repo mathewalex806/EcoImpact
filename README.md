@@ -77,7 +77,7 @@ Django is a high-level Python web framework that simplifies and streamlines the 
    ```sh  
     python manage.py runserver
     ```
-3. Open the browser and enter the following URL:
+3. Open any browser and enter the following URL:
    ```sh
    http://127:0.0.1:8000/
    ```
@@ -89,14 +89,17 @@ Django is a high-level Python web framework that simplifies and streamlines the 
     Username: admin
     Password: 1234
     ```
-
+6. To use the API used in this project, visit the following URL:
+   ```sh
+    https://www.climatiq.io/
+    ```
 
 
 ## Contact
 
 Alex Mathew - Email : mathewalex806@gmail.com
 
-Video Link: [https://www.youtube.com/channel/UCleW5mn9OvKg_CnNFNk6bpQ](Youtube Link)
+Video Link: [https://www.youtube.com/watch?v=MjpOFMPKEas]
 
 
 
